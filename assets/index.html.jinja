@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  {% if use_katex %}
+  <link rel="stylesheet" href="./assets/katex.min.css">
+  <script src="./assets/katex.min.js"></script>
+  <script src="./assets/auto-render.min.js"></script>
+  {% endif %}
+</head>
+
+<body>
+  <textarea id="source">{{ slides }}</textarea>
+  <script src="./assets/remark.min.js"></script>
+  <script>
+    var options = {
+      ratio: '16:9',
+      highlightLanguage: "python",
+      highlightStyle: "monokai",
+      highlightLines: true,
+      slideNumberFormat: '',
+    };
+    remark.macros['scale'] = function (percentage) {
+        var url = this;
+        return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    };
+    {% if use_katex %}
+    var renderMath = function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "\\(", right: "\\)", display: false },
+        ]
+      });
+    }
+    var slideshow = remark.create(options, renderMath);
+    {% else %}
+    var slideshow = remark.create(options);
+    {% endif %}
+  </script>
+</body>
+
+</html>
