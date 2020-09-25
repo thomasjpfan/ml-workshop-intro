@@ -2,7 +2,7 @@
 
 ## How do I build slides?
 
-Install the dependencies: `pip install -r requirements.txt`.
+Install the dependencies: `pip install -r assets/requirements-slides.txt`.
 
 ```py
 python make.py build
