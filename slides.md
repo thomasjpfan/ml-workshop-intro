@@ -16,7 +16,7 @@ This workshop on Github: github.com/thomasjpfan/ml-workshop-intro</a>
 ---
 
 name: table-of-contents
-class: middle, larger
+class: title-slide, left
 
 # Table of Contents
 
