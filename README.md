@@ -53,3 +53,7 @@ jupyter lab
 ```
 
 This should open a browser window with the `jupterlab` interface.
+
+## License
+
+This repo is under the [MIT License](LICENSE).
