@@ -28,19 +28,19 @@ If you are not familiar with git, you can download this repository as a zip file
 
 ## Installation
 
-This workshop requires conda to be installed on your local machine. The easiest install conda is to install `miniconda` by using an installer for your operating system provided by [docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html). After conda is installed, navigate to this repository on your local machine:
+This workshop requires `conda` to be installed on your local machine. The simplest way to install `conda` is to install `miniconda` by using an installer for your operating system provided at [docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html). After `conda` is installed, navigate to this repository on your local machine:
 
 ```bash
 cd ml-workshop-intro
 ```
 
-To download and install the dependencies run:
+Then download and install the dependencies:
 
 ```bash
 conda env create -f environment.yml
 ```
 
-This will create a virtual environment named `ml-workshop-intro`. To activate the environment:
+This will create a virtual environment named `ml-workshop-intro`. To activate this environment:
 
 ```bash
 conda activate ml-workshop-intro
