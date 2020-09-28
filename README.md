@@ -16,7 +16,7 @@ The most convenient way to download the material is with git:
 git clone https://github.com/thomasjpfan/ml-workshop-intro
 ```
 
-Please note that I may add and improve the material until shortly before the tutorial session. You can update your copy by running:
+Please note that I may add and improve the material until shortly before the session. You can update your copy by running:
 
 ```bash
 git pull origin master
@@ -24,7 +24,7 @@ git pull origin master
 
 ### Download zip
 
-If you are not familiar with git, you can download this repository as a zip file by following [github.com/thomasjpfan/ml-workshop-intro/archive/master.zip](https://github.com/thomasjpfan/ml-workshop-intro/archive/master.zip). Please note that I may add and improve the material until shortly before the session. To update your copy please re-download the material a day before the tutorial.
+If you are not familiar with git, you can download this repository as a zip file at: [github.com/thomasjpfan/ml-workshop-intro/archive/master.zip](https://github.com/thomasjpfan/ml-workshop-intro/archive/master.zip). Please note that I may add and improve the material until shortly before the session. To update your copy please re-download the material a day before the session.
 
 ## Installation
 
