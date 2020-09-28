@@ -40,7 +40,7 @@ To download and install the dependencies run:
 conda env create -f environment.yml
 ```
 
-This will install a virtual environment. To activate the environment:
+This will create a virtual environment named `ml-workshop-intro`. To activate the environment:
 
 ```bash
 conda activate ml-workshop-intro
