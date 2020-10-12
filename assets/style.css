@@ -14,32 +14,27 @@ body {
 }
 
 .remark-slide-content {
-    font-size: 1em;
+    font-size: 1.2rem;
     border-top: solid 5px #520b92;
 }
 
 .remark-slide-content h1 {
     font-weight: bold;
-    font-size: 1.8em;
-    margin: .1em 0 .5em 0;
+    font-size: 2.5rem;
+    margin: .2em 0;
     color: #520b92;
 }
 
 .remark-slide-content h2 {
-    font-size: 1.3em;
+    font-size: 1.9rem;
     font-weight: bold;
     margin: 0 0 .5em 0;
 }
 
-.remark-slide-content h3 {
-    font-size: 1.1em;
-    font-weight: normal;
-    margin: 0 0 .5em 0;
-}
-
-.remark-slide-number {
-    font-size: 0.5em;
-    bottom: 2em;
+.remark-slide-content p, .remark-slide-content li{
+  font-size: 1.8rem;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
 }
 
 
@@ -91,10 +86,6 @@ strong {
     color: white;
 }
 
-.remark-code {
-    font-size: 0.9em;
-}
-
 ul > li, ol > li {
   margin: 0.3em 0;
 }
@@ -104,14 +95,18 @@ li > p {
 }
 
 ul > li > ul > li {
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 .caption {
     display: block;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     font-style: italic;
+}
+
+img {
+  max-width: 100%;
 }
 
 .circle img {
@@ -123,22 +118,15 @@ ul > li > ul > li {
     height: auto;
 }
 
-.footnote {
-  position: absolute;
-  bottom: 0.5em;
-  font-size: 0.8em;
-  opacity: 0.9;
-  left: 1.5em;
-}
-
 .footnote a{
-    color: #0288d1; /*#20707e;*/
+  color: #0288d1;
+  font-size: 1.5rem;
 }
 
-.footnote-back {
+.footnote p{
   position: absolute;
   bottom: 0.5em;
-  font-size: 0.7em;
+  font-size: 1rem;
   opacity: 0.9;
   right: 1.5em;
 }
@@ -167,12 +155,22 @@ ul > li > ul > li {
 }
 
 .hljs-monokai .hljs-comment {
-    color: #a18e35;
+  color: #28FE14;
 }
 
 .remark-code-line-highlighted {
     background-color: #373832;
 }
+
+.remark-code {
+  font-size: 1.3rem;
+}
+
+.remark-inline-code {
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.5rem;
+}
+
 code {
   background: #e7e8e2;
   border-radius: 5px;
@@ -181,21 +179,23 @@ code {
 /* Specials ----------------------------------------------------------------- */
 
 .title-slide {
-    font-size: 1.2em;
     text-align: center;
     vertical-align: middle;
 }
 
 .title-slide h1 {
-    margin-top: 1em;
+    font-size: 2.8rem;
 }
 
 .chapter-slide {
     background-color: #520b92;
     color: white;
     vertical-align: middle;
-    font-size: 1.2em;
     text-align: center;
+}
+
+.chapter-slide h1 {
+  font-size: 3rem;
 }
 
 .chapter-slide h1,
@@ -216,7 +216,7 @@ code {
 }
 
 .this-talk-link {
-    font-size: 0.8em;
+    font-size: 1.3rem;
     display: block;
     font-style: italic;
     margin-top: 1em;
@@ -224,7 +224,7 @@ code {
 
 
 blockquote{
-  font-size: 1.4em;
+  font-size: 1rem;
   width:75%;
   margin:0 auto;
   font-style:italic;
@@ -241,7 +241,7 @@ blockquote::before{
   font-family:Arial;
   content: "\201C";
   color:#008000;
-  font-size:4em;
+  font-size:4rem;
   position: absolute;
   left: 0;
   top:-10px;

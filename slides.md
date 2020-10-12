@@ -20,10 +20,17 @@ class: title-slide, left
 
 # Table of Contents
 
+.g[
+.g-6[
 1. [Introduction to Machine Learning](#introduction)
 1. [Supervised Learning](#supervised)
 1. [Preprocessing](#preprocessing)
 1. [Pipelines](#pipelines)
+]
+.g-6.g-center[
+![](images/scikit-learn-logo-notext.png)
+]
+]
 
 ---
 
@@ -32,9 +39,106 @@ class: chapter-slide
 
 # 1. Introduction to Machine Learning
 
-.footnote-back[
+.footnote[
 [Back to Table of Contents](#table-of-contents)
 ]
+
+---
+
+class: chapter-slide
+
+# What is machine learning?
+
+---
+
+class: middle
+
+# Traditional programming
+
+## Prediction
+
+![](images/traditional-programming.svg)
+
+---
+
+class: middle
+
+# Machine Learning
+
+## Training
+
+![:scale 60%](images/ml-training.svg)
+
+## Prediction
+
+![:scale 60%](images/ml-prediction.svg)
+
+---
+
+class: center
+
+# Amazon Recommendations
+
+![](images/amazon.png)
+
+---
+
+class: center
+
+# Higgs Boson
+
+![](images/higgs.png)
+
+.footnote[
+[Machine Learning Wins the Higgs Challenge](https://atlas.cern/updates/atlas-news/machine-learning-wins-higgs-challenge)
+]
+
+---
+
+![](images/blood_quality.png)
+
+.footnote[
+[Link to Source](https://www.broadinstitute.org/news/deep-learning-model-assesses-quality-stored-blood)
+]
+
+---
+
+class: middle
+
+# Types of Machine Learning
+
+- Unsupervised Learning
+
+- Reinforcement Learning
+
+- Supervised Learning
+
+---
+
+# Unsupervised Learning
+
+![:scale 80%](images/clustering.png)
+
+.footnote[
+[Link to Source](https://scikit-learn.org/dev/auto_examples/cluster/plot_cluster_comparison.html#sphx-glr-auto-examples-cluster-plot-cluster-comparison-py)
+]
+
+---
+
+# Reinforcement Learning
+
+![:scale 80%](images/reinforcement.svg)
+
+---
+
+# Reinforcement Learning
+
+![:scale 90%](images/dota.png)
+
+.footnote[
+[Link to Source](https://arxiv.org/abs/1912.06680)
+]
+
 
 ---
 
@@ -43,9 +147,115 @@ class: chapter-slide
 
 # 2. Supervised Learning
 
-.footnote-back[
+.footnote[
 [Back to Table of Contents](#table-of-contents)
 ]
+
+---
+
+# Supervised Learning
+
+$$
+(x_i, y_i) \propto p(x, y) \text{ i.i.d}
+$$
+- $p$ is an unknown joint distribution
+- i.i.d means independent identically distributed
+
+$$x_i \in \mathbb{R}^p$$
+$$y_i \in \mathbb{R}$$
+
+## Goal during training
+$$f(x_i) \approx y_i$$
+
+---
+
+# Generalization
+
+## Goal during training
+$$f(x_i) \approx y_i$$
+
+## Generalization
+$$f(x) \approx y$$
+
+For *non-training data*: $x$
+
+---
+
+# Classification and Regression
+
+.g[
+.g-6[
+## Classification
+- target $y$ is discrete
+]
+.g-6[
+## Regression
+- target $y$ is continuous
+]
+]
+
+---
+
+# Data Representation
+
+## ADD DIAGRAM FOR RECTAGULAR DATA
+
+---
+
+# Loading Datasets
+
+## Random datasets
+```py
+from sklearn.datasets import make_classification
+from sklearn.datasets import make_regression
+```
+
+## Sample datasets
+```py
+from sklearn.datasets import load_breast_cancer
+from sklearn.datasets import load_diabetes
+from sklearn.datasets import load_digits
+from sklearn.datasets import load_iris
+from sklearn.datasets import load_wine
+```
+
+## OpenML
+
+```py
+from sklearn.datasets import fetch_openml
+```
+
+---
+
+# Splitting Training and Test Data
+
+## ADD DIAGRAM OF SPLITTING
+
+---
+
+class: chapter-slide
+
+# Notebook 📒!
+## notebooks/01-loading-data.ipynb
+
+---
+
+# Supervised ML Workflow
+
+## ADD DIAGRAM OF WORKFLOW
+
+---
+
+# Supervised ML Workflow
+
+## ADD DIAGRAM FOR SKLEARN
+
+---
+
+class: chapter-slide
+
+# Notebook 📓!
+## notebooks/02-supervised-learning.ipynb
 
 ---
 
@@ -54,9 +264,19 @@ class: chapter-slide
 
 # 3. Preprocessing
 
-.footnote-back[
+.footnote[
 [Back to Table of Contents](#table-of-contents)
 ]
+
+---
+
+- Show example data
+- Show scaling
+- Compare models with scaling and no scaling
+- Show ways to scale data
+- Standard Scaler
+- Do not include testing when scaling example
+- Notebook
 
 ---
 
@@ -65,15 +285,29 @@ class: chapter-slide
 
 # 4. Pipelines
 
-.footnote-back[
+.footnote[
 [Back to Table of Contents](#table-of-contents)
 ]
 
 ---
 
-class: title-slide, left
+- Recall scaling should no include test data
+- Example of why pipeline is better
+- `make_pipeline` and `Pipeline`
+- Notebook
 
-# Closing
+---
+
+# Whats next?
+
+- Cross Validation
+- Parameter Tuning
+- Pandas interoperability
+- Missing Values
+
+---
+
+class: title-slide, left
 
 .g.g-middle[
 .g-7[
