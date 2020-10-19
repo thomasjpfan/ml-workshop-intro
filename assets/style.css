@@ -32,14 +32,18 @@ body {
 }
 
 .remark-slide-content h3 {
-    font-size: 1.1em;
-    font-weight: normal;
+    font-size: 1em;
+    font-weight: bold;
     margin: .25em 0;
 }
 
 .remark-slide-number {
     font-size: 0.5em;
     bottom: 2em;
+}
+
+.remark-slide-content {
+  font-size: 1.2em;
 }
 
 
@@ -89,10 +93,6 @@ strong {
 
 .black-slide  .katex, .black-slide h1, .black-slide a {
     color: white;
-}
-
-.remark-code {
-    font-size: 0.9em;
 }
 
 ul > li, ol > li {
@@ -168,14 +168,6 @@ ul > li > ul > li {
 
 .hljs-monokai .hljs-comment {
     color: #a18e35;
-}
-
-.remark-code-line-highlighted {
-    background-color: #373832;
-}
-code {
-  background: #e7e8e2;
-  border-radius: 5px;
 }
 
 /* Specials ----------------------------------------------------------------- */

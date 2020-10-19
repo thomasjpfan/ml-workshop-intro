@@ -39,7 +39,7 @@ class: chapter-slide
 
 # 1. Introduction to Machine Learning
 
-.footnote[
+.footnote-back[
 [Back to Table of Contents](#table-of-contents)
 ]
 
@@ -147,7 +147,7 @@ class: chapter-slide
 
 # 2. Supervised Learning
 
-.footnote[
+.footnote-back[
 [Back to Table of Contents](#table-of-contents)
 ]
 
@@ -266,19 +266,66 @@ class: chapter-slide
 
 # 3. Preprocessing
 
-.footnote[
+.footnote-back[
 [Back to Table of Contents](#table-of-contents)
 ]
 
 ---
 
-- Show example data
-- Show scaling
-- Compare models with scaling and no scaling
-- Show ways to scale data
-- Standard Scaler
-- Do not include testing when scaling example
-- Notebook
+# Boston Housing Data
+
+![:scale 100%](notebooks/images/boston.svg)
+
+---
+
+# Boston Feature Ranges
+
+
+![:scale 90%](notebooks/images/boston_scale.svg)
+
+---
+
+class: chapter-slide
+
+# Notebook 📕!
+## notebooks/02-preprocessing.ipynb
+
+---
+
+# KNN Scaling
+
+![:scale 90%](notebooks/images/knn-data.svg)
+
+---
+
+# KNN Scaling Decision Boundary
+
+![:scale 90%](notebooks/images/knn-scaling.svg)
+
+---
+
+# Scikit-Learn API
+
+
+.center[
+## `estimator.fit(X, [y])`
+]
+
+.g[
+.g-6[
+## `estimator.predict`
+- Classification
+- Regression
+- Clustering
+]
+.g-6[
+## `estimator.transform`
+- Preprocessing
+- Dimensionality reduction
+- Feature selection
+- Feature extraction
+]
+]
 
 ---
 
@@ -287,25 +334,82 @@ class: chapter-slide
 
 # 4. Pipelines
 
-.footnote[
+.footnote-back[
 [Back to Table of Contents](#table-of-contents)
 ]
 
 ---
 
-- Recall scaling should no include test data
-- Example of why pipeline is better
-- `make_pipeline` and `Pipeline`
-- Notebook
+# Why Pipelines?
+
+- Preprocessing must be fitted on training data only!
+
+## Bad
+```py
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.fit_transform(X_test)
+```
+
+## Good
+```py
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+```
+
+---
+
+# Pipeline Example
+
+## Before
+
+```py
+scaler = StandardScaler().fit(X_train)
+X_train_scaled = scaler.fit(X_train)
+
+est = Ridge().fit(X_train_scaled, y_train)
+
+X_test_scaled = scaler.transform(X_test)
+est.score(X_test_scaled, y_test)
+```
+
+## After
+
+```py
+*from sklearn.pipeline import make_pipeline
+
+pipe = make_pipeline(StandardScaler(), Ridge())
+
+pipe.fit(X_train, y_train)
+pipe.score(X_test, y_test)
+```
+
+---
+
+# Pipeline Overview
+
+![](images/pipeline.svg)
+
+---
+
+class: chapter-slide
+
+# Notebook 📕!
+## notebooks/04-pipelines.ipynb
 
 ---
 
 # Whats next?
-
+## Intermediate Machine Learning with scikit-learn
 - Cross Validation
 - Parameter Tuning
 - Pandas interoperability
 - Missing Values
+
+## Other Workshops
+- Intermediate Machine Learning with scikit-learn: <br> *Evaluation, Calibration, and Inspection*
+- Advanced Machine Learning with scikit-learn: <br> *Text Data, Imbalanced Data, and Poisson Regression*
 
 ---
 
