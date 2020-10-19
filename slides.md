@@ -187,10 +187,12 @@ For *non-training data*: $x$
 .g-6[
 ## Classification
 - target $y$ is discrete
+- Does the patient have cancer?
 ]
 .g-6[
 ## Regression
 - target $y$ is continuous
+- What is the price of the home?
 ]
 ]
 
@@ -198,7 +200,7 @@ For *non-training data*: $x$
 
 # Data Representation
 
-## ADD DIAGRAM FOR RECTAGULAR DATA
+![](images/data-representation.svg)
 
 ---
 
@@ -229,7 +231,7 @@ from sklearn.datasets import fetch_openml
 
 # Splitting Training and Test Data
 
-## ADD DIAGRAM OF SPLITTING
+![](images/train-test.svg)
 
 ---
 
@@ -242,13 +244,13 @@ class: chapter-slide
 
 # Supervised ML Workflow
 
-## ADD DIAGRAM OF WORKFLOW
+![](images/ml-workflow.svg)
 
 ---
 
 # Supervised ML Workflow
 
-## ADD DIAGRAM FOR SKLEARN
+![](images/ml-workflow-sklearn.svg)
 
 ---
 
