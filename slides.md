@@ -79,7 +79,7 @@ class: center
 
 # Amazon Recommendations
 
-![](images/amazon.png)
+![:scale 100%](images/amazon.png)
 
 ---
 
@@ -87,7 +87,7 @@ class: center
 
 # Higgs Boson
 
-![](images/higgs.png)
+![:scale 100%](images/higgs.png)
 
 .footnote[
 [Machine Learning Wins the Higgs Challenge](https://atlas.cern/updates/atlas-news/machine-learning-wins-higgs-challenge)
@@ -95,7 +95,7 @@ class: center
 
 ---
 
-![](images/blood_quality.png)
+![:scale 100%](images/blood_quality.png)
 
 .footnote[
 [Link to Source](https://www.broadinstitute.org/news/deep-learning-model-assesses-quality-stored-blood)
