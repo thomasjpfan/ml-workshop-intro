@@ -401,7 +401,7 @@ X_test_scaled = scaler.transform(X_test)
 
 ```py
 scaler = StandardScaler().fit(X_train)
-X_train_scaled = scaler.fit(X_train)
+X_train_scaled = scaler.transform(X_train)
 
 est = Ridge().fit(X_train_scaled, y_train)
 
