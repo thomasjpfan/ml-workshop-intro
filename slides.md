@@ -133,7 +133,7 @@ class: middle
 
 # Reinforcement Learning
 
-![:scale 90%](images/dota.png)
+![:scale 80%](images/dota.png)
 
 .footnote[
 [Link to Source](https://arxiv.org/abs/1912.06680)
