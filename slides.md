@@ -87,7 +87,7 @@ class: center
 
 # Higgs Boson
 
-![:scale 100%](images/higgs.png)
+![](images/higgs.png)
 
 .footnote[
 [Machine Learning Wins the Higgs Challenge](https://atlas.cern/updates/atlas-news/machine-learning-wins-higgs-challenge)
