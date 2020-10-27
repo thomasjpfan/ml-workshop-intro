@@ -13,7 +13,7 @@ log_reg = make_pipeline(
 
 log_reg.fit(X_train, y_train)
 
-ridge_pipe.score(X_test, y_test)
+log_reg.score(X_test, y_test)
 
 from sklearn.preprocessing import PolynomialFeatures
 
