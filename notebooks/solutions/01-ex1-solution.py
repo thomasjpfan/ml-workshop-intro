@@ -1,11 +1,12 @@
 from sklearn.datasets import load_wine
+
 wine = load_wine(as_frame=True)
-wine_df = wine.frame
 
 print(wine.DESCR)
 
-wine.target.value_counts()
+X, y = wine.data, wine.target
+y.value_counts()
 
-wine.data.shape
+wine_df = wine.frame
 
-sns.jointplot(data=wine_df, x="alcohol", y="hue", height=10, hue='target');
+sns.jointplot(x="alcohol", y="hue", data=wine_df, height=10, hue='target')
