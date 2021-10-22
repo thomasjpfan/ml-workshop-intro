@@ -56,9 +56,9 @@ jupyter lab
 
 This should open a browser window with the `jupterlab` interface.
 
-### Run with Google's Colaboratory
+### Run with Google's Colab
 
-If you have any issues with installing `conda` or running `jupyter` on your local computer, then you can run the notebooks on Google's Colaboratory:
+If you have any issues with installing `conda` or running `jupyter` on your local computer, then you can run the notebooks on Google's Colab:
 
 1. [Loading data into machine learning](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/01-loading-data.ipynb)
 2. [Supervised learning with scikit-learn](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/02-supervised-learning.ipynb)
