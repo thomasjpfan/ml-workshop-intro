@@ -61,9 +61,9 @@ This should open a browser window with the `jupterlab` interface.
 If you have any issues with installing `conda` or running `jupyter` on your local computer, then you can run the notebooks on Google's Colaboratory:
 
 1. [Loading data into machine learning](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/01-loading-data.ipynb)
-1. [Supervised learning with scikit-learn](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/02-supervised-learning.ipynb)
-1. [Preprocessing](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/03-preprocessing.ipynb)
-1. [Pipelines](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/04-pipelines.ipynb)
+2. [Supervised learning with scikit-learn](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/02-supervised-learning.ipynb)
+3. [Preprocessing](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/03-preprocessing.ipynb)
+4. [Pipelines](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/04-pipelines.ipynb)
 
 
 ## License
