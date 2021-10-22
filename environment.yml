@@ -3,8 +3,8 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
-  - python=3.9.*
+  - python=3.9.7
   - scikit-learn=1.0.*
-  - seaborn=0.11.*
+  - seaborn=0.11.2
   - pandas
-  - jupyterlab=3.1.*
+  - jupyterlab=3.1.18
