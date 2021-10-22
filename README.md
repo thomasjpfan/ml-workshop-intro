@@ -26,9 +26,11 @@ git pull origin master
 
 If you are not familiar with git, you can download this repository as a zip file at: [github.com/thomasjpfan/ml-workshop-intro/archive/master.zip](https://github.com/thomasjpfan/ml-workshop-intro/archive/master.zip). Please note that I may add and improve the material until shortly before the session. To update your copy please re-download the material a day before the session.
 
-## Installation
+## Running the notebooks
 
-This workshop requires `conda` to be installed on your local machine. The simplest way to install `conda` is to install `miniconda` by using an installer for your operating system provided at [docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html). After `conda` is installed, navigate to this repository on your local machine:
+### Local Installation
+
+Local installation requires `conda` to be installed on your machine. The simplest way to install `conda` is to install `miniconda` by using an installer for your operating system provided at [docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html). After `conda` is installed, navigate to this repository on your local machine:
 
 ```bash
 cd ml-workshop-intro
@@ -53,6 +55,16 @@ jupyter lab
 ```
 
 This should open a browser window with the `jupterlab` interface.
+
+### Run with Google's Colaboratory
+
+If you have any issues with installing `conda` or running `jupyter` on your local computer, then you can run the notebooks on Google's Colaboratory:
+
+1. [Loading data into machine learning](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/01-loading-data.ipynb)
+1. [Supervised learning with scikit-learn](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/02-supervised-learning.ipynb)
+1. [Preprocessing](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/03-preprocessing.ipynb)
+1. [Pipelines](https://colab.research.google.com/github/thomasjpfan/ml-workshop-intro/blob/master/notebooks/04-pipelines.ipynb)
+
 
 ## License
 
