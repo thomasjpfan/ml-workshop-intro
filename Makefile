@@ -1,7 +1,7 @@
-.PHONY: clean
+.PHONY: clean check
 
 clean:
 	jupyter nbconvert --clear-output --inplace notebooks/0*.ipynb
 
 check:
-	jupyter nbconvert --execute notebooks/0*.ipynb --to notebook --stdout
+	bash maint_tools/check_notebooks.sh
