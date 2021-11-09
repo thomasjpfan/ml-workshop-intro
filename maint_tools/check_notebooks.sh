@@ -1,3 +1,5 @@
-set -xe
+set -e
 
-jupyter nbconvert --execute notebooks/0*.ipynb --to notebook --stdout
+for f in notebooks/0*.ipynb; do
+ jupyter nbconvert --execute $f --to notebook --stdout >/dev/null
+done
