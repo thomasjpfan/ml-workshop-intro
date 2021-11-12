@@ -29,6 +29,13 @@ class: title-slide
 <a class="this-talk-link", href="https://github.com/thomasjpfan/ml-workshop-intro" target="_blank">
 This workshop on Github: github.com/thomasjpfan/ml-workshop-intro</a>
 
+???
+
+## Links
+
+- https://scikit-learn.org/stable/
+- https://github.com/thomasjpfan/ml-workshop-intro
+
 ---
 
 name: table-of-contents
@@ -196,6 +203,8 @@ $$f(x) \approx y$$
 For *non-training data*: $x$
 
 ---
+
+class: middle
 
 # Classification and Regression
 
@@ -405,6 +414,7 @@ X_train_scaled = scaler.transform(X_train)
 
 est = Ridge().fit(X_train_scaled, y_train)
 
+# Evaluate on training data
 X_test_scaled = scaler.transform(X_test)
 est.score(X_test_scaled, y_test)
 ```
