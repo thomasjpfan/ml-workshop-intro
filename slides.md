@@ -209,7 +209,7 @@ class: middle
 
 # Data Representation
 
-![](images/data-representation.svg)
+![:scale 80%](images/data-representation.svg)
 
 ---
 
@@ -240,7 +240,7 @@ from sklearn.datasets import fetch_openml
 
 # Splitting Training and Test Data
 
-![](images/train-test.svg)
+![:scale 70%](images/train-test.svg)
 
 ---
 
