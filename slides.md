@@ -74,11 +74,11 @@ class: middle
 
 ## Training
 
-![:scale 60%](images/ml-training.svg)
+![](images/ml-training.svg)
 
 ## Prediction
 
-![:scale 60%](images/ml-prediction.svg)
+![](images/ml-prediction.svg)
 
 ---
 
@@ -86,7 +86,7 @@ class: center
 
 # Amazon Recommendations
 
-![:scale 100%](images/amazon.png)
+![](images/amazon.png)
 
 ---
 
@@ -102,7 +102,7 @@ class: center
 
 ---
 
-![:scale 100%](images/blood_quality.png)
+![](images/blood_quality.png)
 
 .footnote[
 [Link to Source](https://www.broadinstitute.org/news/deep-learning-model-assesses-quality-stored-blood)

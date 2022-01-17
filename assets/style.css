@@ -125,13 +125,12 @@ ul>li>ul>li {
   font-style: italic;
 }
 
-.circle img {
-  border-radius: 50%;
+img {
+  max-width: 100%;
 }
 
-.stretch img {
-  width: 100%;
-  height: auto;
+.circle img {
+  border-radius: 50%;
 }
 
 .footnote {
