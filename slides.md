@@ -270,25 +270,6 @@ class: chapter-slide
 
 ---
 
-class: middle
-
-# Relationship to Statistics
-
-.g[
-.g-6[
-## Statistics
-- model first
-- inference emphasis
-]
-.g-6[
-## Machine learning
-- data first
-- prediction emphasis
-]
-]
-
----
-
 name: preprocessing
 class: chapter-slide
 
@@ -300,16 +281,16 @@ class: chapter-slide
 
 ---
 
-# Boston Housing Data
+# Housing Dataset
 
-![:scale 100%](notebooks/images/boston.svg)
+![:scale 100%](notebooks/images/housing_scatter.svg)
 
 ---
 
-# Boston Feature Ranges
+# Feature Ranges
 
 
-![:scale 90%](notebooks/images/boston_scale.svg)
+![:scale 90%](notebooks/images/housing_box.svg)
 
 ---
 
