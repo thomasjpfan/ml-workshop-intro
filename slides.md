@@ -379,7 +379,7 @@ X_train_scaled = scaler.transform(X_train)
 
 est = Ridge().fit(X_train_scaled, y_train)
 
-# Evaluate on training data
+# Evaluate on test data
 X_test_scaled = scaler.transform(X_test)
 est.score(X_test_scaled, y_test)
 ```
